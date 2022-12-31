@@ -1,0 +1,67 @@
+---
+---
+
+<button
+  class="theme-toggle grid cursor-pointer bg-transparent border rounded-full outline-offset-2 h-8 w-8 place-items-center border-text-bold border-primary-yellow hover:bg-light-yellow dark:border-primary-blue text-primary-blue dark:hover:bg-light-blue justify-self-end ml-4 inline-flex items-center"
+  id="mode-toggle"
+  tabindex="0"
+  role="switch"
+  aria-checked="false"
+  data-headlessui-state=""
+>
+  <span class="sr-only">Toggle dark mode</span>
+  <span
+    id="mode-circle"
+    class="light invisible"
+    ><span
+      class="absolute top-0 right-0 scale-[0]"
+    ></span>
+  </span>
+</button>
+
+<script>
+  // @ts-nocheck
+  document.querySelector("#mode-toggle").addEventListener("click", () => {
+    const iconElem = document.querySelector("#mode-circle");
+    const isDark = document.documentElement.classList.contains("dark");
+    if (isDark) {
+      document.documentElement.classList.remove("dark");
+      document.documentElement.classList.add("light");
+      iconElem.classList.remove("dark");
+      iconElem.classList.add("light");
+      sessionStorage.setItem("theme", "light");
+    } else {
+      document.documentElement.classList.remove("light");
+      document.documentElement.classList.add("dark");
+      iconElem.classList.remove("light");
+      iconElem.classList.add("dark");
+      sessionStorage.setItem("theme", "dark");
+    }
+
+    // prevent slide animation on page load for dark mode
+    if (!iconElem.classList.contains("duration-300")) {
+      iconElem.classList.add("duration-300");
+    }
+  });
+
+  window.addEventListener("DOMContentLoaded", (event) => {
+    if (document.documentElement.classList.contains("dark")) {
+      const iconElem = document.querySelector("#mode-circle");
+      iconElem.classList.remove("light");
+      iconElem.classList.add("dark");
+    }
+    document.querySelector("#mode-circle").classList.remove("invisible");
+  });
+</script>
+
+<style>
+  .dark::after {
+    content: "☀";
+    transform: translateX(1.5rem);
+  }
+
+  .light::after {
+    content: "🌙";
+    transform: translateX(0.25rem);
+  }
+</style>
