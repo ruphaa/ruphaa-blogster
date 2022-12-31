@@ -56,3 +56,15 @@ export const project = z.object({
   }),
   url: z.string(),
 });
+
+export const library = z.object({
+  draft: z.boolean().default(false),
+  title: z.string({
+    required_error: "Required frontmatter missing: title",
+    invalid_type_error: "title must be a string",
+  }),
+  date: z.date(),
+  description: z.optional(z.string()),
+  ogImagePath: z.optional(z.string()),
+  canonicalUrl: z.optional(z.string()),
+});
