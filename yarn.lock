@@ -765,10 +765,10 @@ ast-types@0.14.2:
   dependencies:
     tslib "^2.0.1"
 
-astro-markdoc-renderer@0.0.1-alpha.0:
-  version "0.0.1-alpha.0"
-  resolved "https://registry.yarnpkg.com/astro-markdoc-renderer/-/astro-markdoc-renderer-0.0.1-alpha.0.tgz#e4ba057c29f78ff9db1d63560ed86c492e5010ae"
-  integrity sha512-Nfxmdh+OVeZ6PwWAd7bgDMyQrTGPKIgsaZrek7GMUCQrsrJo74v2zdAOwD4rj2xAFFOg7ek3mY1j5VkWQI/2cQ==
+astro-markdoc-renderer@0.0.1-alpha.1:
+  version "0.0.1-alpha.1"
+  resolved "https://registry.yarnpkg.com/astro-markdoc-renderer/-/astro-markdoc-renderer-0.0.1-alpha.1.tgz#82c10ed6221da42d692fc10be11c7f4696199ae3"
+  integrity sha512-XePuJ3MZZKWgiHOS0/v3KaoSFGEzKE2jx2UoZRyKBHyQoMzahU0VeH751VvalLvc4+DamdGhQRhdcco0iLUsvQ==
   dependencies:
     "@markdoc/markdoc" "^0.2.1"
     markdown-it "^13.0.1"

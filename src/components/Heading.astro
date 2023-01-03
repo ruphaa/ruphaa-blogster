@@ -25,10 +25,17 @@ if (level === 2) {
 }
 ---
 
-<Tag id={id} class="group flex">
-  <span class="
+<Tag id={id} class="group flex -ml-[1rem]">
+  <span class="not-prose w-[1rem] -mt-[0.125rem]">
+      <a aria-label="link to this heading" aria-describedby={headingText} href={`#${id}`} 
+          class="unset align-middle text-[14px] text-candy-purple opacity-0 group-hover:opacity-100 group-focus:opacity-100 focus:opacity-100 group-active:opacity-100 active:opacity-100">
+          <i class="fa-solid fa-hashtag"></i>
+      </a>
+  </span>
+<span>{children}</span>
+  <!-- <span class="
     relative block leading-[150%]
   ">
     {children}
-  </span>
+  </span> -->
 </Tag>
