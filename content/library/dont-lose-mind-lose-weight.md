@@ -1,6 +1,6 @@
 ---
-title: "Don’t lose your mind, lose your weight"
-description: ""
+external: false
+title: "Don't lose your mind, lose your weight"
 date: 2022-09-10
 ---
 

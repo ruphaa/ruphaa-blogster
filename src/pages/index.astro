@@ -1,15 +1,19 @@
 ---
 import PageMeta from "../components/PageMeta.astro";
 import PageLayout from "../layouts/PageLayout.astro";
-import Intro from "../components/Intro.astro";
-import AboutTheTheme from "../components/AboutTheTheme.astro";
+import IntroSection from "../components/IntroSection.astro";
+import NowSection from "../components/NowSection.astro";
+import SpeakingSection from "../components/SpeakingSection.astro";
 import { SITE_TITLE } from "../config";
 ---
 
 <PageLayout>
   <PageMeta title={`${SITE_TITLE} | Web Ninja`} slot="meta" />
   <Fragment slot="main">
-    <Intro />
-    <!-- <AboutTheTheme /> -->
+  <section class="mb-8">
+    <IntroSection />
+    <NowSection />
+    <SpeakingSection />
+  </section>
   </Fragment>
 </PageLayout>

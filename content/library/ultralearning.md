@@ -1,12 +1,12 @@
 ---
+external: false
 title: "Ultralearning"
-description: ""
 date: 2022-09-10
 ---
 
 ## Notes:
 
-### Why ultralearning?:
+### Why ultralearning?
 
 A strategy for acquiring skills and knowledge that is both self-directed and intense.
 

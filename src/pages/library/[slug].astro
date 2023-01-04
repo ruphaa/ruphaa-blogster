@@ -13,7 +13,9 @@ export async function getStaticPaths() {
 
   // we don't want to generate pages for posts that link to external websites
   const filteredPosts = libraryList
-    .filter((l) => l.frontmatter.draft !== true)
+    .filter((p) =>
+      import.meta.env.MODE !== "production" ? true : p.frontmatter.draft !== true
+    )
 
   return filteredPosts.map((post) => {
     return { params: { slug: post.slug } };
@@ -35,7 +37,6 @@ const { content, frontmatter } = await readOne({
 <ContentLayout title={frontmatter.title} date={frontmatter.date}>
   <BlogPostMeta
     title={frontmatter.title}
-    description={frontmatter.description}
     publishDate={frontmatter.date.toISOString()}
     slot="meta"
   />

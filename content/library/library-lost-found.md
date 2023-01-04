@@ -1,6 +1,6 @@
 ---
+external: false
 title: "The library of Lost and Found"
-description: ""
 date: 2022-09-10
 ---
 

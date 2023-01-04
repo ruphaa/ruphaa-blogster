@@ -1,6 +1,6 @@
 ---
+external: false
 title: "The Midnight Library"
-description: ""
 date: 2022-09-10
 ---
 

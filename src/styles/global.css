@@ -2,11 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-    font-family: 'Space Grotesk', sans-serif;
-    /* base font-size 1px larger for better visibility */
-    font-size: 1.125em;
-    line-height: 1.85;
+@layer base {
+    :root {
+        font-family: 'Space Grotesk', sans-serif;
+        /* base font-size 1px larger for better visibility */
+        font-size: 1.125em;
+        line-height: 1.85;
+        background-color: theme('colors.bg.body');
+        color: theme('colors.text.body');
+    }
+
+    body {
+        transition: background-color 0.3s ease;
+    }
 }
 
 @layer components {

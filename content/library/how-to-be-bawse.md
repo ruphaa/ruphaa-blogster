@@ -1,6 +1,6 @@
 ---
+external: false
 title: "How to be a bawse"
-description: ""
 date: 2022-09-10
 ---
 
