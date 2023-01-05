@@ -1,15 +1,19 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
+
 ---
 
 <Fragment>
   <nav class="hidden md:inline">
-    <section class="text-text-bold">
+    <section class="text-text-bold flex w-full items-center">
+      <!-- <a href="/" class="home flex-1 no-underline unset" aria-label="home">
+        <img src="../../public/images/roo-logo.svg" class="mt-1.5 w-12 h-12 object-cover"/>
+      </a> -->
       <ul class="unset flex gap-4 [&>li]:p-0">
         <li><HeaderLink href="/" class="home">Home</HeaderLink></li>
         <li><HeaderLink href="/blog" class="blog">Blog</HeaderLink></li>
         <li><HeaderLink href="/projects" class="project">Projects</HeaderLink></li>
-        <li><HeaderLink href="/library" class="library">Library</HeaderLink></li>
+        <li><HeaderLink href="/library" class="library">Notes</HeaderLink></li>
       </ul>
     </section>
   </nav>

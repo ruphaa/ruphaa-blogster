@@ -1,6 +1,6 @@
 ---
 external: false
-title: "The Midnight Library"
+title: "The Midnight Library by Matt Haig"
 date: 2022-09-10
 ---
 

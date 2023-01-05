@@ -34,7 +34,7 @@ module.exports = {
         },
         "candy": {
           "pink": "#EAA9C1",
-          "yellow": "#FBE893",
+          "yellow": "#f2cb1e",
           "green": "#ABE6AD",
           "blue": "#91AAF9",
           "purple": "#C28DF8",

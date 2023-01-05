@@ -1,6 +1,6 @@
 ---
 external: false
-title: "How to be a bawse"
+title: "How to be a bawse by Lilly Singh"
 date: 2022-09-10
 ---
 

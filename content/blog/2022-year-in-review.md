@@ -66,10 +66,11 @@ Setbacks are inevitable. Mistakes don't define us but what we learn from them do
 ### ✨ What's in store for 2023
 
 I'm not doing any resolutions this year, instead, I've set some goals for which I've mapped out some systems to follow through.
+
 - Be more active in webdev community([Twitter](https://twitter.com/ruphaaganesh) and [LinkedIn](https://www.linkedin.com/in/ruphaaganesh/)).
 - Build more projects and codepens in public.
-- Create more content (Write a minimum of 24 blog posts this year).
-- Read 30 books.
+- Create more content.
+- Read 30 books this year.
 - Travel local. Do more adventurous stuff(hiking, canyoning 😉).
 
 ### End credits

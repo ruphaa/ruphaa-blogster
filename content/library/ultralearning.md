@@ -1,6 +1,6 @@
 ---
 external: false
-title: "Ultralearning"
+title: "Ultralearning by Scott H. Young"
 date: 2022-09-10
 ---
 

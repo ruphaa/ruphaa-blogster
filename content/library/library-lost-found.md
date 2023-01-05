@@ -1,6 +1,6 @@
 ---
 external: false
-title: "The library of Lost and Found"
+title: "The library of Lost and Found by Phaedra Patrick"
 date: 2022-09-10
 ---
 

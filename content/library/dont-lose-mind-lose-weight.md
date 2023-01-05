@@ -1,6 +1,6 @@
 ---
 external: false
-title: "Don't lose your mind, lose your weight"
+title: "Don't lose your mind, lose your weight by Diwekar Rujuta"
 date: 2022-09-10
 ---
 
