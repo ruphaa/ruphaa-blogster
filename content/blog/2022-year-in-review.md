@@ -77,7 +77,7 @@ I'm not doing any resolutions this year, instead, I've set some goals for which 
 If I had to describe 2022 in one word, I'd say **"Learning"**. I'm grateful for having had tons of learning opportunities this year. 
 I'm thrilled and excited for 2023, we have the whole year ahead of us full of potential and possibilities. 
 
-If anything the past couple of years have taught us, it is the uncertainty. Cherish every single day and be grateful for every single thing we have.
+If anything the past couple of years has taught us, it is uncertainty. Cherish every single day and be grateful for every single thing we have.
 
 That's all folks. Thanks for staying till the end. I wish you all a stunning year ahead! See you soon 👋
 
