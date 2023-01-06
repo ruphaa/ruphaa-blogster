@@ -1,5 +1,4 @@
 ---
-draft: true
 external: false
 title: "2022: Year in Review"
 date: 2022-12-31

@@ -1,4 +1,6 @@
 ---
+import HeaderLink from "./HeaderLink.astro";
+
 ---
 
 <div class="mt-8 mb-2">
@@ -10,8 +12,23 @@
   <p class="text-lg pb-4">Welcome to my digital garden 🪴</p>
 </div>
 <div>
-  <p class="mb-5">
-    Hey, I'm Ruphaa! I'm a software engineer in Sydney. I'm currently working at Canva in the Design system team. 
-  <br/>This is my scared space where I share my projects, write blog posts and notes about topics I'm interested in.
-  </p>    
+  <h2 class="font-semibold text-2xl">About me</h2>
+  <ul class="list-none mt-4">
+    <li class="grid grid-cols-[1fr] md:grid-cols-[1fr_auto] mb-3">
+      <div class="title">
+        <span>Software Engineer based in Sydney 👩‍💻</span>
+      </div>
+    </li>
+    <li class="grid grid-cols-[1fr] md:grid-cols-[1fr_auto] mb-3">
+      <div class="title">
+        <span>Working in <HeaderLink href="https://www.canva.com/" class="home font-semibold" target="_blank">Canva's</HeaderLink> Design system team ♥️</span>
+      </div>
+    </li>
+    <li class="grid grid-cols-[1fr] md:grid-cols-[1fr_auto] mb-3">
+      <div class="title">
+        <span>This is my creative space where I share my projects, write blog posts and post notes about topics I'm interested in. Hope you enjoy it ✨</span>
+      </div>
+    </li>
+  </ul>
 </div>
+
