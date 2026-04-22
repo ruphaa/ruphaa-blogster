@@ -22,9 +22,12 @@ const sortedPosts = posts
 ---
 
 <PageLayout>
-  <PageMeta title={`Blog | ${SITE_TITLE}`} slot="meta" />
+  <PageMeta title={`Learn | ${SITE_TITLE}`} slot="meta" />
   <section slot="main" class="mt-8">
-    <ul>
+    <details class="archives border border-border-code rounded-lg overflow-hidden">
+      <summary class="cursor-pointer font-semibold p-4 bg-primary-main/10 hover:bg-primary-main/15 transition-colors select-none">Archives</summary>
+      <div class="p-4">
+        <ul>
       {
         sortedPosts.map((post) => {
           const formattedDate = new Date(
@@ -70,6 +73,8 @@ const sortedPosts = posts
           );
         })
       }
-    </ul>
+        </ul>
+      </div>
+    </details>
   </section>
 </PageLayout>

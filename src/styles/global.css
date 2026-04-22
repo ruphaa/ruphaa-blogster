@@ -144,5 +144,25 @@
         transform: translateZ(0) scale(1);
     }
 
+    /* ------ ARCHIVES ACCORDION ------ */
+    details.archives > summary {
+        list-style: none;
+    }
+    details.archives > summary::-webkit-details-marker {
+        display: none;
+    }
+    details.archives > summary::after {
+        content: "▼";
+        float: right;
+        font-size: 0.75rem;
+        transition: transform 0.2s ease;
+    }
+    details[open].archives > summary::after {
+        transform: rotate(180deg);
+    }
+    details[open].archives > summary {
+        border-bottom: 1px solid theme('colors.border.code');
+    }
+
     /* ------ REUSABLE UTILS - END ------ */
 }
