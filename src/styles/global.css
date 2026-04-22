@@ -128,7 +128,7 @@
         background-image: linear-gradient(to right, theme('colors.candy.blue'), theme('colors.candy.blue'));
     }
 
-    .animated-link.blog::after {
+    .animated-link.writing::after {
         background-image: linear-gradient(to right, theme('colors.candy.purple'), theme('colors.candy.purple'));
     }
 

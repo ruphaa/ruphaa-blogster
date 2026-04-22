@@ -16,7 +16,7 @@ const baseSchema = z.object({
 
 /*
   Blog posts could be of two types —
-  1. The posts you write in markdown files in content/blog/*.md
+  1. The posts you write in markdown files in content/writing/*.md
   2. External posts in other websites
 
   That's why we the frontmatter schema for blog posts is one of the two possible types.
