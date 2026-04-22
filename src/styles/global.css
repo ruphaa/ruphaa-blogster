@@ -164,5 +164,19 @@
         border-bottom: 1px solid theme('colors.border.code');
     }
 
+    /* light mode: stronger border and summary bg */
+    :root:not(.dark) details.archives {
+        border-color: theme('colors.slate.500');
+    }
+    :root:not(.dark) details.archives > summary {
+        background-color: theme('colors.slate.200');
+    }
+    :root:not(.dark) details.archives > summary:hover {
+        background-color: theme('colors.slate.300');
+    }
+    :root:not(.dark) details[open].archives > summary {
+        border-bottom-color: theme('colors.slate.500');
+    }
+
     /* ------ REUSABLE UTILS - END ------ */
 }

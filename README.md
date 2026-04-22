@@ -42,9 +42,9 @@ The site is organized into three curated spaces. Older posts live in **Archives*
 
 | Section | Route | What Goes Here |
 |---------|-------|----------------|
-| **Learn** | `/blog` | Blog posts, tutorials, and deep dives |
-| **Build** | `/projects` | Side projects and things I've shipped |
-| **Writing** | `/library` | Book notes, quick thoughts, and snippets |
+| **Writing** | `/writing` | Blog posts, tutorials, and deep dives |
+| **Build** | `/build` | Side projects and things I've shipped |
+| **Learn** | `/learn` | Book notes, quick thoughts, and snippets |
 
 ---
 
@@ -125,9 +125,9 @@ Book notes, quick thoughts, or anything worth remembering.
 ```
 ruphaa-blogster/
 ├── content/                 # All Markdown content
-│   ├── blog/                # Learn — blog posts
+│   ├── writing/             # Writing — blog posts & tutorials
 │   ├── projects/            # Build — projects
-│   └── library/             # Writing — notes & snippets
+│   └── library/             # Learn — book notes & snippets
 ├── public/                  # Static assets (images, fonts, favicons)
 │   └── fontawesome/         # Self-hosted icon font
 ├── src/
