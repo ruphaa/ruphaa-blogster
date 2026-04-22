@@ -5,7 +5,7 @@ import { SITE_TITLE, SITE_DESCRIPTION, SITE_URL } from "../config";
 
 export const get = async () => {
   const posts = await readAll({
-    directory: "writing",
+    directory: "write",
     frontmatterSchema: blog,
   });
 
@@ -42,7 +42,7 @@ export const get = async () => {
     const title = frontmatter.title;
     const pubDate = frontmatter.date;
     const description = frontmatter.description;
-    const link = `${baseUrl}/writing/${slug}`;
+    const link = `${baseUrl}/write/${slug}`;
 
     return {
       title,
