@@ -19,17 +19,61 @@ const sortedProjects = projects
       new Date(b.frontmatter.date).valueOf() -
       new Date(a.frontmatter.date).valueOf()
   );
+
+const featuredProjects = sortedProjects.filter((p) => p.frontmatter.featured);
+const archivedProjects = sortedProjects.filter((p) => !p.frontmatter.featured);
 ---
 
 <PageLayout>
   <PageMeta title={`Build | ${SITE_TITLE}`} slot="meta" />
   <section slot="main" class="mt-8">
+    <!-- Featured Projects -->
+    {
+      featuredProjects.length > 0 && (
+        <ul class="mb-8">
+          {featuredProjects.map((project) => {
+            const formattedDate = new Date(
+              project.frontmatter.date
+            ).toLocaleDateString("en-us", {
+              year: "numeric",
+              month: "short",
+              day: "numeric",
+            });
+            return (
+              <li class="grid grid-cols-[1fr] md:grid-cols-[1fr_auto] mb-3">
+                <div class="title">
+                  <a
+                    href={project.frontmatter.url}
+                    target="_blank"
+                    class="unset
+                      hover:decoration-4 hover:decoration-solid hover:underline hover:decoration-candy-green
+                      "
+                  >
+                    <span>{project.frontmatter.title}</span>
+                    <span>
+                      <i class="ml-1 text-[12px] fa-solid fa-up-right-from-square" />
+                    </span>
+                  </a>
+                </div>
+                <div class="text-green-700 dark:text-candy-green text-xs place-self-start md:place-self-center font-semibold">
+                  <time datetime={project.frontmatter.date.toISOString()}>
+                    {formattedDate}
+                  </time>
+                </div>
+              </li>
+            );
+          })}
+        </ul>
+      )
+    }
+
+    <!-- Archives -->
     <details class="archives border border-border-code rounded-lg overflow-hidden">
       <summary class="cursor-pointer font-semibold p-4 bg-primary-main/10 hover:bg-primary-main/15 transition-colors select-none">Archives</summary>
       <div class="p-4">
         <ul>
       {
-        sortedProjects.map((project) => {
+        archivedProjects.map((project) => {
           const formattedDate = new Date(
             project.frontmatter.date
           ).toLocaleDateString("en-us", {
