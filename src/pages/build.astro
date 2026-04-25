@@ -40,8 +40,8 @@ const archivedProjects = sortedProjects.filter((p) => !p.frontmatter.featured);
               day: "numeric",
             });
             return (
-              <li class="grid grid-cols-[1fr] md:grid-cols-[1fr_auto] mb-3">
-                <div class="title">
+              <li class="grid grid-cols-[1fr] md:grid-cols-[1fr_auto] mb-3 gap-x-3">
+                <div class="title flex flex-wrap items-center gap-x-2 gap-y-1">
                   <a
                     href={project.frontmatter.url}
                     target="_blank"
@@ -51,9 +51,19 @@ const archivedProjects = sortedProjects.filter((p) => !p.frontmatter.featured);
                   >
                     <span>{project.frontmatter.title}</span>
                     <span>
-                      <i class="ml-1 text-[12px] fa-solid fa-up-right-from-square" />
+                      <i class="ml-1 text-[12px] fa-brands fa-github" />
                     </span>
                   </a>
+                  {project.frontmatter.previewUrl && (
+                    <a
+                      href={project.frontmatter.previewUrl}
+                      target="_blank"
+                      class="unset inline-flex items-center gap-1 text-[11px] font-semibold px-2 py-0.5 rounded-full border border-candy-green/40 text-green-700 dark:text-candy-green bg-candy-green/10 hover:bg-candy-green/20 transition-colors"
+                    >
+                      <i class="fa-solid fa-play text-[9px]" />
+                      <span>Live demo</span>
+                    </a>
+                  )}
                 </div>
                 <div class="text-green-700 dark:text-candy-green text-xs place-self-start md:place-self-center font-semibold">
                   <time datetime={project.frontmatter.date.toISOString()}>
@@ -82,8 +92,8 @@ const archivedProjects = sortedProjects.filter((p) => !p.frontmatter.featured);
             day: "numeric",
           });
           return (
-            <li class="grid grid-cols-[1fr] md:grid-cols-[1fr_auto] mb-3">
-              <div class="title">
+            <li class="grid grid-cols-[1fr] md:grid-cols-[1fr_auto] mb-3 gap-x-3">
+              <div class="title flex flex-wrap items-center gap-x-2 gap-y-1">
                 <a
                   href={project.frontmatter.url}
                   target="_blank"
@@ -96,6 +106,16 @@ const archivedProjects = sortedProjects.filter((p) => !p.frontmatter.featured);
                     <i class="ml-1 text-[12px] fa-solid fa-up-right-from-square" />
                   </span>
                 </a>
+                {project.frontmatter.previewUrl && (
+                  <a
+                    href={project.frontmatter.previewUrl}
+                    target="_blank"
+                    class="unset inline-flex items-center gap-1 text-[11px] font-semibold px-2 py-0.5 rounded-full border border-candy-green/40 text-green-700 dark:text-candy-green bg-candy-green/10 hover:bg-candy-green/20 transition-colors"
+                  >
+                    <i class="fa-solid fa-play text-[9px]" />
+                    <span>Live demo</span>
+                  </a>
+                )}
               </div>
               <div class="text-green-700 dark:text-candy-green text-xs place-self-start md:place-self-center font-semibold">
                 <time datetime={project.frontmatter.date.toISOString()}>
